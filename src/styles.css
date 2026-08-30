@@ -78,19 +78,13 @@ nav a:hover, nav a:focus-visible { color: var(--yellow); }
 .services-section { min-height: 948px; padding: 122px 0 110px; }
 .services-grid { margin-top: 58px; display: grid; grid-template-columns: repeat(6, 1fr); }
 .service-card { min-height: 227px; padding: 28px 26px; background: white; border: 1px solid #e1ded8; position: relative; grid-column: span 2; }
-.service-card h3 { margin: 46px 0 14px; font-size: 18px; letter-spacing: -.025em; }
+.service-card h3 { margin: 24px 0 14px; font-size: 18px; letter-spacing: -.025em; }
 .service-card p { margin: 0; color: #6e716c; font-size: 13px; line-height: 1.58; }
-.square-icon { width: 40px; height: 40px; border: 1px solid #171a18; display: grid; place-items: center; color: #171a18; background: #fff; }
-.square-icon svg { width: 26px; height: 26px; overflow: visible; fill: none; stroke: currentColor; stroke-width: 1.45; stroke-linecap: square; stroke-linejoin: miter; }
-.square-icon svg circle { fill: none; stroke: currentColor; }
-.square-icon svg .icon-accent { fill: var(--yellow); stroke: #171a18; }
-.square-icon-assembly .icon-load { fill: var(--yellow); stroke: #171a18; }
-.service-dark .square-icon { background: #101413; color: #f3f2ed; border-color: #555953; }
-.service-dark .square-icon svg .icon-accent { fill: var(--yellow); stroke: #f3f2ed; }
+.square-icon { width: 64px; height: 64px; display: block; overflow: hidden; background: #fff; }
+.square-icon img { width: 100%; height: 100%; display: block; object-fit: cover; }
 .service-wide { grid-column: span 3; }
 .service-dark { grid-column: span 3; background: var(--ink); color: white; border-color: var(--ink); }
 .service-dark p { color: #8c908b; }
-.service-dark .square-icon { border-color: #444843; }
 .service-dark .tag { position: absolute; top: 28px; right: 26px; border: 1px solid #665a12; color: var(--yellow); padding: 6px 9px; font: 9px/1 monospace; letter-spacing: .1em; }
 
 .systems-section { min-height: 1425px; padding: 120px 0 100px; background-color: var(--paper-deep); }

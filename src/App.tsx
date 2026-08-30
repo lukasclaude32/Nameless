@@ -54,15 +54,7 @@ function ArrowLink({ children }: { children: React.ReactNode }) {
 type ServiceIconKind = 'production' | 'assembly' | 'inspection' | 'service' | 'training';
 
 function ServiceIcon({ kind }: { kind: ServiceIconKind }) {
-  const drawings: Record<ServiceIconKind, React.ReactNode> = {
-    production: <><path d="M3 16.5V5.5h6l2 2h6v9H3Z" /><path d="M6 5.5V3.2h5v4.3M5.5 13.5h9M13 10.5h2" /><circle className="icon-accent" cx="8" cy="10.5" r="2.1" /><path d="M8 7.4v1m0 4.2v1m-3.1-3.1h1m4.2 0h1" /></>,
-    assembly: <><path d="M2.5 4.5h15M4 4.5v12m12-12v12M7 4.5h6M10 4.5v5" /><path d="M8.5 9.5h3v1.2c0 1.4-.6 2.2-1.5 2.2s-1.5-.8-1.5-1.5" /><path className="icon-accent icon-load" d="M5.5 14h9v2.5h-9z" /></>,
-    inspection: <><circle cx="8" cy="8" r="4.5" /><path d="m11.5 11.5 5 5M5.8 8l1.5 1.5 3-3M14.5 3.5h3v3" /></>,
-    service: <><path d="M12.8 3.2a4 4 0 0 0-4.6 5.1L3 13.5a2.1 2.1 0 1 0 3 3l5.2-5.2a4 4 0 0 0 5.1-4.6l-2.8 2.8-3-3 2.3-3.3Z" /><circle cx="4.6" cy="14.9" r=".7" /></>,
-    training: <><path d="M7.5 4h10v9h-6M10 6.5h5M10 9h3.5" /><circle className="icon-accent" cx="5" cy="7" r="2" /><path d="M2 16.5v-3c0-1.7 1.3-3 3-3s3 1.3 3 3v3M8 13l3-2" /><path d="m13.5 11.5 1.2 1.2 2.3-2.5" /></>,
-  };
-
-  return <span className={`square-icon square-icon-${kind}`} aria-hidden="true"><svg viewBox="0 0 20 20">{drawings[kind]}</svg></span>;
+  return <span className="square-icon" aria-hidden="true"><img src={`/icons/${kind}.png`} alt="" /></span>;
 }
 
 function Site() {
