@@ -54,7 +54,7 @@ function ArrowLink({ children }: { children: React.ReactNode }) {
 type ServiceIconKind = 'production' | 'assembly' | 'inspection' | 'service' | 'training';
 
 function ServiceIcon({ kind }: { kind: ServiceIconKind }) {
-  return <span className="square-icon" aria-hidden="true"><img src={`/icons/${kind}.png`} alt="" /></span>;
+  return <span className={`square-icon square-icon-${kind}`} aria-hidden="true"><img src={`/icons/${kind}.png`} alt="" /></span>;
 }
 
 function Site() {
