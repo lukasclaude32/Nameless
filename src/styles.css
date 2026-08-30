@@ -80,10 +80,11 @@ nav a:hover, nav a:focus-visible { color: var(--yellow); }
 .service-card { min-height: 227px; padding: 28px 26px; background: white; border: 1px solid #e1ded8; position: relative; grid-column: span 2; }
 .service-card h3 { margin: 46px 0 14px; font-size: 18px; letter-spacing: -.025em; }
 .service-card p { margin: 0; color: #6e716c; font-size: 13px; line-height: 1.58; }
-.square-icon { width: 40px; height: 40px; display: block; overflow: hidden; background: transparent; }
+.square-icon { width: 40px; min-width: 40px; max-width: 40px; height: 40px; min-height: 40px; max-height: 40px; aspect-ratio: 1; display: block; overflow: hidden; background: transparent; }
 .square-icon img { width: 100%; height: 100%; display: block; object-fit: cover; }
 .square-icon:not(.square-icon-training) { border: 1px solid #171a18; padding: 3px; }
-.square-icon:not(.square-icon-training) img { transform: scale(1.42); }
+.square-icon:not(.square-icon-training) img { transform: scale(1); }
+.square-icon-training { border: 1px solid #aeb3ae; padding: 3px; }
 .service-wide { grid-column: span 3; }
 .service-dark { grid-column: span 3; background: var(--ink); color: white; border-color: var(--ink); }
 .service-dark p { color: #8c908b; }
